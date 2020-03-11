@@ -3056,8 +3056,9 @@ var sk = {
                                            // } 
                                         } 
                                         else if(columnText == 'Doctor Profile' && tableId == 'appointment_type_table')
-                                        {       
-                                           var ss = d.split('<br/><hr style="margin: 1px 0;">  ');
+                                        {     
+											  
+                                           var ss = d.split('<br><hr style=\"margin: 1px 0;\">  ');
                                            for(i  in ss)  {   
                                                 if($.inArray(ss[i], sk.duplicateapptypeArr) != -1) {
                                                      sk.duplicateapptypeArr.push(ss[i]);
